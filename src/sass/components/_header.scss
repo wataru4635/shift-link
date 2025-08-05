@@ -1,0 +1,7 @@
+@use "global"as *;
+
+nav a {
+  @media (min-width: 1350px) {
+  letter-spacing: 0.14em;
+  }
+}
