@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.logo-text {
+  color: var(--main-color);
+  font-family: var(--font-family-second);
+  font-size: rem(24);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: calc(-0.96px / 24px * 1em);
+  @include mq('md') {
+    font-size: rem(33);
+  }
+}
+
+.logo-text__spacing {
+  letter-spacing: calc(0.238px / 24px * 1em);
+}
+
+.logo-text__black {
+  color: var(--main-black);
+}

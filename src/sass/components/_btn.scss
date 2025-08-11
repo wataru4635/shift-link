@@ -1,0 +1,145 @@
+@use "global"as *;
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(30);
+  padding-inline: rem(5);
+  min-width: rem(110);
+  background-color: var(--red);
+  color: var(--white);
+  font-size: rem(10);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  letter-spacing: calc(0.721px / 10px * 1em);
+  border: 1px solid var(--red);
+  transition: color var(--duration-base) ease, background-color var(--duration-base) ease;
+
+  @include mq('md') {
+    font-size: rem(14);
+    height: rem(56);
+    min-width: rem(229);
+    padding-inline: rem(15);
+    letter-spacing: calc(1.12px / 14px * 1em);
+    position: relative;
+
+    &::after {
+      content: '';
+      width: rem(23);
+      height: rem(7);
+      background-color: var(--white);
+      -webkit-mask-image: url('../images/common/arrow-right.svg');
+      mask-image: url('../images/common/arrow-right.svg');
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      position: absolute;
+      top: 50%;
+      right: rem(13);
+      translate: 0 -50%;
+      transition: right var(--duration-base) ease, background-color var(--duration-base) ease;
+    }
+  }
+}
+
+@media (any-hover: hover) {
+  .contact-btn:hover {
+    color: var(--red);
+    background-color: var(--white);
+
+    &::after {
+      right: rem(8);
+      background-color: var(--red);
+    }
+  }
+}
+
+
+.link-btn {
+  color: var(--white);
+  line-height: 1;
+  font-size: rem(14);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: calc(0.98px / 14px * 1em);
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  transition: color var(--duration-base) ease, background-color var(--duration-base) ease;
+  padding: rem(18) rem(30);
+
+  @media (max-width: 767px) {
+    min-width: rem(255);
+    text-align: center;
+  }
+
+  @include mq('md') {
+    padding: rem(8.5) rem(25);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--red);
+      background-color: var(--white);
+    }
+  }
+}
+
+.link-btn--white {
+  color: var(--red);
+  background-color: var(--white);
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--white);
+      background-color: var(--red);
+    }
+  }
+}
+
+.link-btn-more {
+  color: var(--main-color);
+  font-size: rem(14);
+  font-weight: var(--font-weight-bold);
+  padding: rem(14) rem(20);
+  min-width: rem(258);
+  border: 1px solid var(--main-color);
+  background: var(--white);
+  transition: background-color var(--duration-base) ease;
+  line-height: 1;
+  position: relative;
+  @include mq('md') {
+    min-width: rem(198);
+    padding: rem(8) rem(20);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--main-color);
+      color: var(--white);
+
+      &::after {
+        right: rem(8);
+        background-color: var(--white);
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    width: rem(20);
+    height: rem(6);
+    background-color: var(--main-color);
+    -webkit-mask-image: url('../images/common/arrow-right.svg');
+    mask-image: url('../images/common/arrow-right.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    position: absolute;
+    top: 50%;
+    right: rem(13);
+    translate: 0 -50%;
+    transition: right var(--duration-base) ease, background-color var(--duration-base) ease;
+  }
+}

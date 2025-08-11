@@ -40,3 +40,10 @@
     }
   }
 }
+
+html {
+  scroll-padding-top: rem(66);
+  @include mq('md') {
+    scroll-padding-top: rem(134);
+  }
+}

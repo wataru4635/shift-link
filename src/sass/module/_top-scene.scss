@@ -1,0 +1,142 @@
+@use "global"as *;
+
+.top-scene {
+  padding-block: var(--section-padding-block);
+  border-top: 1px solid var(--line-color);
+
+  @media (max-width: 767px) {
+    overflow-x: clip;
+  }
+}
+
+.top-scene__title-wrap {
+  margin-inline: auto;
+  padding-inline: 20px;
+
+  @include mq('md') {
+    max-width: 1310px;
+    padding-inline: 35px;
+  }
+}
+
+.top-scene__content {
+  margin-top: rem(60);
+}
+
+.top-scene_carousel_wrap {
+  width: auto;
+  margin: 0 auto !important;
+  padding: 0 rem(20) !important;
+
+  @include mq('md') {
+    padding: 0 myClamp(35, 100, 1300, 1440) !important;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .top-scene_carousel_wrap {
+    padding-left: calc(50% - 620px) !important;
+    padding-right: calc(50% - 720px) !important;
+  }
+}
+
+.top-scene_carousel {
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: 0;
+  translate: 50px 0;
+  transition: opacity var(--duration-long) ease, translate var(--duration-long) ease, transform var(--duration-long) ease-out;
+}
+
+.top-scene_carousel-item {
+  position: relative;
+  width: rem(220);
+  margin-right: rem(14);
+  border: 1px solid var(--line-color);
+  background: var(--white);
+  padding: rem(30) rem(20) rem(8) rem(20);
+  height: auto;
+
+  @include mq('md') {
+    width: rem(250);
+    margin-right: rem(30);
+    padding: rem(30) rem(20);
+  }
+}
+
+.top-scene_carousel-item:last-of-type {
+  margin-right: 0;
+}
+
+.top-scene_carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 180 / 100;
+
+  @include mq('md') {
+    aspect-ratio: 210 / 100;
+  }
+}
+
+.top-scene_carousel-title {
+  font-size: rem(16);
+  font-weight: var(--font-weight-bold);
+  margin-top: rem(30);
+}
+
+.top-scene_carousel-text {
+  font-size: rem(13);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: calc(-0.13 / 13 * 1em);
+  margin-top: rem(6);
+}
+
+.top-scene_carousel_wrap+.genesis_carousel_scrollbar .swiper-scrollbar {
+  margin-top: rem(50) !important;
+}
+
+.genesis_carousel_scrollbar {
+  position: relative;
+  opacity: 0;
+  translate: 50px 0;
+  transition: opacity var(--duration-long) ease, translate var(--duration-long) ease;
+}
+
+.swiper-scrollbar-drag {
+  background-color: var(--main-color);
+  height: 2px !important;
+}
+
+.genesis_carousel_scrollbar {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: rem(20);
+  position: relative;
+  z-index: 50;
+
+  @include mq('md') {
+    padding-left: myClamp(35, 100, 1300, 1440);
+  }
+}
+
+.genesis_carousel_scrollbar .swiper-scrollbar {
+  width: 100% !important;
+  left: auto !important;
+  top: auto !important;
+  position: relative !important;
+  cursor: pointer;
+  height: 1px !important;
+}
+
+.top-scene__content.is-active {
+  & .top-scene_carousel {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  & .genesis_carousel_scrollbar {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
