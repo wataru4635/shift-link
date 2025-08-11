@@ -69,7 +69,7 @@
           </picture>
         </div>
         <div class="top-about__text-block">
-          <h2 class="top-about__title section-title js-text-split">SHIFT LINKとは</h2>
+          <h2 class="top-about__title section-title js-text-split">SHIFT&nbsp;LINKとは</h2>
           <p class="top-about__lead js-slide-right --delay-2">
             SHIFT LINKは、スマホにかざすだけで特別な映像やメッセージが流れる、<br class="u-desktop">次世代のイベントプロモーショングッズです。
           </p>
@@ -90,7 +90,7 @@
 
   <section class="top-solution">
     <div class="top-solution__inner inner">
-      <h2 class="top-solution__title section-title js-text-split">SHIFT LINKなら、お悩みを解決</h2>
+      <h2 class="top-solution__title section-title js-text-split">SHIFT&nbsp;LINKなら、お悩みを解決</h2>
       <ul class="top-solution__list">
         <li class="top-solution__item">
           <div class="top-solution__img-wrap js-scaleImg">
@@ -151,7 +151,7 @@
 
   <section class="top-features" id="feature">
     <div class="top-features__inner inner">
-      <h2 class="top-features__title section-title js-text-split">SHIFT LINKの3つの特徴</h2>
+      <h2 class="top-features__title section-title js-text-split">SHIFT&nbsp;LINKの3つの特徴</h2>
       <ul class="top-features__list">
         <li class="top-features__item js-fade-up">
           <div class="top-features__img-wrap">
@@ -203,7 +203,7 @@
 
   <section class="top-scene" id="scene">
     <div class="top-scene__title-wrap">
-      <h2 class="top-scene__title section-title js-text-split">SHIFT LINKの活用シーン</h2>
+      <h2 class="top-scene__title section-title js-text-split">SHIFT&nbsp;LINKの活用シーン</h2>
     </div>
     <div class="top-scene__content js-animation">
       <div class="top-scene_carousel_wrap swiper">
