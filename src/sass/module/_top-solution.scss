@@ -113,6 +113,12 @@
   transition-delay: 0.05s;
 }
 
+.top-solution__item-title.top-solution__item-title--no-wrap {
+  @media (max-width: 767px) {
+    white-space: nowrap;
+  }
+}
+
 .top-solution__item-text {
   font-size: rem(13);
   font-weight: var(--font-weight-normal);

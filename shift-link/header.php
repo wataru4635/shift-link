@@ -32,7 +32,7 @@
                   class="header__nav-link-text">特徴</span></a></li>
             <li class="header__nav-item"><a href="#scene" class="header__nav-link"><span
                   class="header__nav-link-text">活用シーン</span></a></li>
-            <li class="header__nav-item"><a href="#qa" class="header__nav-link"><span
+            <li class="header__nav-item"><a href="#faq" class="header__nav-link"><span
                   class="header__nav-link-text">よくあるご質問</span></a></li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@
           <a href="#scene" class="header__drawer-item-link">活用シーン</a>
         </li>
         <li class="header__drawer-item">
-          <a href="#qa" class="header__drawer-item-link">よくあるご質問</a>
+          <a href="#faq" class="header__drawer-item-link">よくあるご質問</a>
         </li>
       </ul>
       <div class="header__drawer-contact-btn">
@@ -93,4 +93,9 @@
         </p>
       </div>
     </div>
+  </div>
+
+  <!---------  floating button  --------->
+  <div class="floating-button js-floating-button">
+    <a href="https://the-shift.tokyo/contact/" class="floating-button__link contact-btn" target="_blank" rel="noopener noreferrer">お問合せはこちら</a>
   </div>

@@ -36,11 +36,11 @@ $padding-sp: 20px;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 :root {
   --black: #000;
+  --white: #fff;
   --text-black: #1E1E1E;
   --main-color: #9E895B;
   --main-black: #585757;
-  --red: #FE3101;
-  --white: #fff;
+  --main-red: #FE3101;
   --line-color: #ECECEC;
   --gradient-color: linear-gradient(90deg, #2C65FF 0%, #79F890 50%, #FF9 100%);
   --bg-color: #F7F9FB;
@@ -54,7 +54,7 @@ $padding-sp: 20px;
   --z-index-to-top: 200;
   --z-index-drawer: 100;
   --z-index-header: 1000;
-  --z-index-modal: 10000;
+  --z-index-floating-button: 1000;
 }
 
 ////////////////////

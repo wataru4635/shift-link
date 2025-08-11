@@ -20,7 +20,7 @@
           </p>
         </div>
         <div class="fv__links">
-          <a href="#" class="fv__link link-btn">
+          <a href="https://the-shift.tokyo/contact/" class="fv__link link-btn" target="_blank" rel="noopener noreferrer">
             資料請求はこちら
           </a>
           <a href="#" class="fv__link link-btn link-btn--white">
@@ -90,7 +90,7 @@
 
   <section class="top-solution">
     <div class="top-solution__inner inner">
-      <h2 class="top-solution__title section-title js-text-split">SHIFT&nbsp;LINKなら、お悩みを解決</h2>
+      <h2 class="top-solution__title section-title js-text-split">SHIFT&nbsp;LINKなら､お悩みを解決</h2>
       <ul class="top-solution__list">
         <li class="top-solution__item">
           <div class="top-solution__img-wrap js-scaleImg">
@@ -139,7 +139,7 @@
           </div>
           <div class="top-solution__item-body js-animation">
             <p class="top-solution__item-tag">SECURITY</p>
-            <h3 class="top-solution__item-title">セキュリティも安心の独自認証システムを搭載</h3>
+            <h3 class="top-solution__item-title top-solution__item-title--no-wrap">セキュリティも安心の独自認証システムを搭載</h3>
             <p class="top-solution__item-text">
               スマホで手軽に再生できる仕組みにしたいが、拡散リスクやセキュリティが心配。そんな場合でも、登録したスマホ限定の再生で無断拡散を防止。安心して配信できます。
             </p>
@@ -370,7 +370,7 @@
     </div>
   </section>
 
-  <section class="top-faq">
+  <section class="top-faq" id="faq">
     <div class="top-faq__inner inner">
       <h2 class="top-faq__title section-title section-title--center js-text-split">よくある質問</h2>
       <dl class="top-faq__list js-fade-up">

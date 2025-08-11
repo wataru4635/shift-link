@@ -116,9 +116,6 @@ overflow: hidden;
   & .fv__links {
     opacity: 1;
     translate: 0 0;
-    transition-delay: 0.2s;
-    @include mq('md') {
-      transition-delay: 0.28s;
-    }
+    transition-delay: 0.28s;
   }
 }

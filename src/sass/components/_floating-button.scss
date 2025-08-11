@@ -1,0 +1,19 @@
+@use "global" as *;
+.floating-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: var(--z-index-floating-button);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-base) ease, visibility var(--duration-base) ease;
+  @media (max-width: 767px) {
+  display: none;
+  }
+
+  &.is-scroll {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+

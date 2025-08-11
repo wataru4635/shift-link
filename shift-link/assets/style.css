@@ -13,11 +13,11 @@
 
 :root {
 	--black: #000;
-	--white: #fff;
 	--text-black: #1E1E1E;
 	--main-color: #9E895B;
 	--main-black: #585757;
 	--main-red: #FE3101;
+	--white: #fff;
 	--line-color: #ECECEC;
 	--gradient-color: linear-gradient(90deg, #2C65FF 0%, #79F890 50%, #FF9 100%);
 	--bg-color: #F7F9FB;
@@ -2166,6 +2166,3 @@ html {
 }
 
 }
-
-
-/*# sourceMappingURL=style.css.map */

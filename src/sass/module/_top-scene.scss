@@ -3,10 +3,7 @@
 .top-scene {
   padding-block: var(--section-padding-block);
   border-top: 1px solid var(--line-color);
-
-  @media (max-width: 767px) {
     overflow-x: clip;
-  }
 }
 
 .top-scene__title-wrap {
