@@ -94,8 +94,3 @@
       </div>
     </div>
   </div>
-
-  <!---------  floating button  --------->
-  <div class="floating-button js-floating-button">
-    <a href="https://the-shift.tokyo/contact/" class="floating-button__link contact-btn" target="_blank" rel="noopener noreferrer">お問合せはこちら</a>
-  </div>

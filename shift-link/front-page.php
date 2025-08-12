@@ -31,32 +31,6 @@
     </div>
   </section>
 
-  <!---------  公開当初は実装なし  --------->
-
-  <!-- <section class="partner-logos">
-    <div class="partner-logos__inner inner">
-    <ul class="partner-logos__list">
-      <li class="partner-logos__item">
-        <img src="logo1.png" alt="協賛企業のロゴ1" loading="lazy" class="partner-logos__image">
-      </li>
-      <li class="partner-logos__item">
-        <img src="logo2.png" alt="協賛企業のロゴ2" loading="lazy" class="partner-logos__image">
-      </li>
-      <li class="partner-logos__item">
-        <img src="logo3.png" alt="協賛企業のロゴ3" loading="lazy" class="partner-logos__image">
-      </li>
-      <li class="partner-logos__item">
-        <img src="logo4.png" alt="協賛企業のロゴ4" loading="lazy" class="partner-logos__image">
-      </li>
-      <li class="partner-logos__item">
-        <img src="logo5.png" alt="協賛企業のロゴ5" loading="lazy" class="partner-logos__image">
-      </li>
-    </ul>
-    </div>
-  </section> -->
-
-  <!---------  ここまで  --------->
-
   <section class="top-about" id="about">
     <div class="top-about__inner">
       <div class="top-about__content">

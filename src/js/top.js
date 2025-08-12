@@ -1,38 +1,4 @@
 /* ===============================================
-# トップページのスライダー機能
-=============================================== */
-// document.addEventListener("DOMContentLoaded", function () {
-//   const carouselWrap = document.querySelector(".top-scene_carousel_wrap");
-
-//   if (carouselWrap) {
-//     new Swiper(".top-scene_carousel_wrap", {
-//       loop: false,
-//       centeredSlides: false,
-//       slidesPerView: "auto",
-//       grabCursor: true,
-//       scrollbar: {
-//         el: ".top-scene_carousel_scrollbar",
-//         hide: false,
-//         draggable: true,
-//         dragSize: 120,
-//       },
-//       freeMode: {
-//         enabled: true,
-//         sticky: false,
-//         momentumBounce: false,
-//       },
-//       breakpoints: {
-//         800: {
-//           scrollbar: {
-//             dragSize: 200,
-//           },
-//         },
-//       },
-//     });
-//   }
-// });
-
-/* ===============================================
 # トップページのスライダー機能（はみ出し時のみスクロールバー表示）
 =============================================== */
 document.addEventListener("DOMContentLoaded", function () {
@@ -85,15 +51,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 表示領域（コンテナの可視横幅）
     const containerWidth = swiper.width;
+    
+    // カルーセル要素を取得
+    const carousel = document.querySelector('.top-scene_carousel');
 
     if (totalWidth > containerWidth + 1) {
       // はみ出している → 表示
       scrollbarEl.style.display = "";
       // サイズ再計算（念のため）
       swiper.scrollbar.updateSize?.();
+      // カルーセルのポインターイベントを有効化
+      if (carousel) {
+        carousel.style.pointerEvents = "auto";
+      }
     } else {
       // 収まっている → 非表示
       scrollbarEl.style.display = "none";
+      // カルーセルのポインターイベントを無効化
+      if (carousel) {
+        carousel.style.pointerEvents = "none";
+      }
     }
   }
 });

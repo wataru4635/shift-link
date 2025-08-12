@@ -75,27 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ===============================================
-# フローティングボタン
-=============================================== */
-document.addEventListener("DOMContentLoaded", function () {
-  var floatingButton = document.querySelector(".js-floating-button");
-  if (floatingButton) {
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 100) {
-        floatingButton.classList.add("is-scroll");
-      } else {
-        floatingButton.classList.remove("is-scroll");
-      }
-    });
-
-    // 初期状態のチェック
-    if (window.scrollY > 100) {
-      floatingButton.classList.add("is-scroll");
-    }
-  }
-});
-
-/* ===============================================
 # アニメーション
 // =============================================== */
 function observeElements(selector) {
